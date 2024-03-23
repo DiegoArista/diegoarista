@@ -1,0 +1,1967 @@
+/********************************/
+/********************************/
+/********************************/
+/********************************/
+/********************************/
+/********************************/
+body {
+  font: 400 16px/1.8 'Nunito', sans-serif;
+  background: #fff;
+  color: #333333;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh; }
+
+.active {
+  color: #3399FF;
+  transition: all ease-in .4s; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lobster', cursive; }
+
+section, main {
+  flex: 1; }
+
+footer {
+  display: block; }
+
+/********************************/
+/********************************/
+.footer {
+  background-color: #0066ff;
+  color: #fff; }
+
+/*******************************************************/
+/******************************************************/
+img {
+  max-width: 100%;
+  height: auto; }
+
+.imagenes--normales {
+  margin-bottom: 20px;
+  padding: 0;
+  border: 15px solid rgba(255, 255, 255, 0.8);
+  background: #fff;
+  background-clip: padding-box;
+  box-shadow: 0px -3px 19px rgba(36, 35, 35, 0.575), 3px 5px 25px rgba(31, 31, 31, 0.61); }
+
+.seccion--significado .imagenes--normales img,
+.seccion--flora .contenedor--imagenes .imagenes--flora img,
+.seccion--fauna .imagenes--fauna img, .seccion--clima .imagenes--clima img,
+.seccion--sociedad .imagenes--sociedad img,
+.seccion--economia .imagenes--normales img,
+.seccion--cultura .imagenes--cultura img,
+.seccion--religion .imagenes--religion img {
+  width: 100%;
+  background: #fff;
+  box-shadow: 1px 1px 7px #333333;
+  object-fit: cover; }
+
+.width-2,
+.width-3,
+.width-4 {
+  width: 100%; }
+
+/********************************/
+/********************************/
+.parrafo--normal {
+  font-size: 1.2em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 200;
+  line-height: normal; }
+
+.parrafo--resaltado {
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: normal; }
+
+.encabezado.fondo-menu {
+  background: rgba(255, 255, 255, 0.99) !important;
+  padding: .3rem 0; }
+
+/********************************/
+/********************************/
+.titulo--nivel1 {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #0066ff;
+  font-size: 2rem;
+  padding: 20px 0;
+  border-bottom: 5px solid #ff6633;
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.781);
+  margin-bottom: 2rem; }
+
+.titulo--nivel2 {
+  width: 100%;
+  border-bottom: 5px solid #333333; }
+
+/************FIN ESTILOS GENERALES**********************/
+/*******************************************************/
+/***********NAV BAR*************/
+/*******************************/
+.encabezado {
+  background: #fff; }
+
+.encabezado .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.encabezado {
+  height: auto; }
+
+#bloque-logo {
+  flex: 1 1 20%;
+  margin: 0 auto !important; }
+
+.encabezado .logo img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  padding: 10px; }
+
+.boton-menu {
+  border: 0;
+  font-size: 1.3rem;
+  padding: .5rem;
+  background: transparent;
+  color: #0066ff; }
+
+#menu-principal > .active > a,
+#menu-principal > .active > a:focus,
+#menu-principal > .active > a:hover {
+  background-color: transparent;
+  color: #3399FF; }
+
+/***********FIN NAV BAR**********/
+/*******************************/
+/************ESTILOS NUEVAS SECCION SLIDER CHIDO***/
+/*****************************************************/
+.primary-btn {
+  line-height: 42px;
+  padding-left: 30px;
+  padding-right: 60px;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative; }
+
+.primary-btn:focus {
+  outline: none; }
+
+.primary-btn span {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  right: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+
+.primary-btn:hover {
+  color: #fff; }
+
+.primary-btn:hover span {
+  color: #fff;
+  right: 20px; }
+
+.primary-btn.white {
+  border: 1px solid #fff;
+  color: #fff; }
+
+.primary-btn.white span {
+  color: #fff; }
+
+.primary-btn.white:hover {
+  background: #fff;
+  color: #b01afe; }
+
+.primary-btn.white:hover span {
+  color: #b01afe; }
+
+.primary-btn2 {
+  color: #222;
+  font-weight: 600;
+  border: 1px solid #f4f4f4;
+  padding: 5px 30px;
+  border-radius: 20px; }
+
+.primary-btn2:hover {
+  color: #fff; }
+
+.pbtn-2 {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+.default-header {
+  background-color: transparent;
+  width: 100% !important; }
+
+@media (max-width: 992px) {
+  .default-header {
+    background-color: #222; } }
+.sticky-wrapper {
+  height: 48px !important; }
+
+.is-sticky .default-header {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #222; }
+
+.dropdown-item {
+  font-size: 14px;
+  width: auto !important;
+  text-align: left; }
+
+@media (max-width: 767px) {
+  .dropdown-item {
+    text-align: left;
+    padding: 0.25rem; } }
+@media (min-width: 768px) {
+  .dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in; }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1; } }
+.dropdown-menu {
+  background: #222;
+  border-radius: 0;
+  margin-top: 15px;
+  border: none; }
+
+.dropdown-menu a {
+  padding: 5px 15px; }
+
+@media (max-width: 767px) {
+  .dropdown-menu {
+    margin-top: 0px; } }
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent; }
+
+.default-banner {
+  margin-top: -48px; }
+
+@media (max-width: 991px) {
+  .default-banner {
+    text-align: center; } }
+.default-banner h1 {
+  color: #222;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1em;
+  margin-bottom: 10px; }
+
+.default-banner h1 span {
+  text-transform: uppercase;
+  font-weight: 700; }
+
+@media (max-width: 991px) {
+  .default-banner h1 {
+    font-size: 36px; } }
+@media (max-width: 991px) {
+  .default-banner h1 br {
+    display: none; } }
+@media (max-width: 1199px) {
+  .default-banner h1 {
+    font-size: 45px; } }
+@media (max-width: 414px) {
+  .default-banner h1 {
+    font-size: 40px; } }
+@media (max-width: 800px) {
+  .default-banner {
+    padding-bottom: 40px; } }
+.header-btn {
+  background-color: #fff;
+  padding: 8px 40px;
+  font-weight: 600;
+  color: #222;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+  border-radius: 20px;
+  margin-top: 30px;
+  display: inline-block; }
+
+.header-btn:hover {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff; }
+
+/*==================
+	SLIDER SECTION
+====================*/
+#mu-slider {
+  display: inline;
+  float: left;
+  width: 100%;
+  position: relative; }
+
+.mu-slider-area {
+  display: inline;
+  float: left;
+  width: 100%; }
+
+.mu-top-slider {
+  display: inline;
+  float: left;
+  width: 100%; }
+
+.mu-top-slider-single {
+  display: inline;
+  float: left;
+  position: relative;
+  width: 100%; }
+
+.mu-top-slider .mu-top-slider-single:after {
+  background-color: rgba(0, 0, 0, 0.479);
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  height: 100vh; }
+
+.mu-top-slider .mu-top-slider-single img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden; }
+
+.btn__slider {
+  background: none;
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  border-radius: 10px; }
+  .btn__slider:hover {
+    transition: all ease-in .3s;
+    background: #0066ff;
+    border: 2px solid #3399FF; }
+
+.mu-top-slider .mu-top-slider-single .mu-top-slider-content {
+  position: absolute;
+  left: 15%;
+  top: 30%;
+  right: 15%;
+  text-align: center;
+  z-index: 99; }
+
+.mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-small-title {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 40px; }
+
+.mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-title {
+  color: #fff;
+  font-size: 50px;
+  line-height: 90px; }
+
+.mu-top-slider .mu-top-slider-single .mu-top-slider-content p {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding: 0 30px; }
+
+.mu-top-slider .slick-prev,
+.mu-top-slider .slick-next {
+  background-color: transparent;
+  border: 2px solid #888;
+  height: 60px;
+  top: 50%;
+  width: 70px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.mu-top-slider .slick-prev::before,
+.mu-top-slider .slick-next::before {
+  color: #888; }
+
+.mu-top-slider .slick-prev:hover,
+.mu-top-slider .slick-prev:focus,
+.mu-top-slider .slick-next:hover,
+.mu-top-slider .slick-next:focus {
+  color: #fff; }
+
+.mu-top-slider .slick-prev:hover::before,
+.mu-top-slider .slick-prev:focus::before,
+.mu-top-slider .slick-next:hover::before,
+.mu-top-slider .slick-next:focus::before {
+  color: #fff; }
+
+.mu-top-slider .slick-prev {
+  left: 20px; }
+
+.mu-top-slider .slick-next {
+  right: 20px; }
+
+.mu-top-slider .slick-dots {
+  bottom: 20px; }
+
+.mu-top-slider .slick-dots li button {
+  border-radius: 50%; }
+
+.mu-top-slider .slick-dots li button::before {
+  color: #fff;
+  font-size: 3rem;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.mu-top-slider .slick-dots li.slick-active button::before {
+  color: #3399FF;
+  opacity: 1; }
+
+@media (max-width: 660px) {
+  .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-title {
+    line-height: normal; }
+
+  .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
+    left: 8%;
+    top: 25%;
+    right: 8%; } }
+@media (max-width: 700px) {
+  .mu-top-slider .mu-top-slider-single .mu-top-slider-content .mu-slider-title {
+    line-height: normal; }
+
+  .mu-top-slider .mu-top-slider-single .mu-top-slider-content {
+    left: 8%;
+    top: 30%;
+    right: 8%; } }
+/****************GALERIA NUEVA FUNCION************/
+/*--------------------------------------------------------------
+	Gallery
+--------------------------------------------------------------*/
+.gallery-item {
+  position: relative;
+  text-align: center; }
+
+.gallery-image {
+  position: relative;
+  overflow: hidden; }
+
+.gallery-image a.gallery {
+  position: relative;
+  display: block; }
+
+.gallery-image img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden; }
+
+.gallery-image:after {
+  position: absolute;
+  background: transparent;
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+
+.gallery-caption {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 2;
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  padding: 20px; }
+
+.gallery-icon {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  font-size: 24px;
+  margin: 0 auto; }
+
+.gallery-icon i,
+.gallery-icon span {
+  line-height: 50px; }
+
+/* Gallery hover */
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%); }
+
+.gallery-caption,
+.gallery-image:after,
+.gallery-image img {
+  transition: all 0.3s ease-in-out 0s; }
+
+/*****FIN GALERI ANUEVA FUNCION***/
+/************ MENU PRINCIPAL MOBILE VERSION**********/
+/***************************************************/
+#menu-principal {
+  flex: 1 1 80% !important;
+  width: 100%;
+  height: auto;
+  z-index: 99; }
+
+#menu-principal ul {
+  padding: 0;
+  list-style: none; }
+
+#menu-principal ul a {
+  display: block;
+  font-family: 'Lobster', cursive;
+  font-size: 1.3rem;
+  margin: .5rem;
+  color: #0066ff;
+  border-bottom: 2px solid #c2c2c2; }
+
+#menu-principal ul li a {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid transparent;
+  transition: all 0.5s;
+  position: relative; }
+
+#menu-principal ul a:hover,
+#menu-principal ul li.active a {
+  text-decoration: none;
+  transition: all ease-in-out .3s;
+  color: #ffcc00; }
+
+#menu-principal ul .nav-item.nav-link:hover,
+#menu-principal a.nav-link.active {
+  text-decoration: none;
+  transition: all ease-in-out .3s;
+  color: #ffcc00; }
+
+#menu-principal ul li a i {
+  font-size: 1rem;
+  padding: 5px; }
+
+#menu-principal ul li ul {
+  background-color: #fff;
+  transition: all ease-in-out .5s; }
+
+#menu-principal ul li ul a {
+  margin: 5px 15px; }
+
+#menu-principal .subnivel {
+  display: none;
+  transition: all ease-in-out .5s; }
+
+#menu-principal ul li:hover .subnivel {
+  display: block;
+  transition: all ease-in-out .5s; }
+
+/************ FIN MENU PRINCIPAL MOBILE VERSION**********/
+/********************************************************/
+/**********EN COMUN****************/
+.espacio--pi {
+  margin-top: 60px; }
+
+.seccion-principal,
+.seccion--geografia,
+.seccion--ubicacion,
+.seccion--flora,
+.seccion--fauna,
+.seccion--clima,
+.seccion--religion,
+.seccion--danza,
+.seccion--gastronomia {
+  position: relative;
+  width: 100%; }
+
+.seccion--geografia .contenedor--geografia,
+.seccion--ubicacion .contenedor--ubicacion,
+.seccion--flora .contenedor--flora,
+.seccion--fauna .contenedor--imagenes--fauna,
+.seccion--clima .contenedor--clima,
+.seccion--religion .contenedor--religion,
+.seccion--danza .contenedor--danza,
+.seccion--gastronomia .contenedor--gastronomia,
+.seccion--galeria {
+  height: 100%;
+  padding-bottom: 100px; }
+
+.seccion--significado .contenedor--significado,
+.seccion--geografia .contenedor--geografia,
+.seccion--ubicacion .contenedor--ubicacion,
+.seccion--flora .contenedor--flora,
+.seccion--fauna .contenedor--imagenes--fauna,
+.seccion--religion .contenedor--religion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start; }
+
+/***********SECTION PRINCIPAL*************/
+.seccion-principal {
+  display: flex;
+  height: 50vh; }
+
+.principal {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: url("../images/fondos/fondo-principal.jpg") no-repeat;
+  background-position: right center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.filtro--principal {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(45deg, rgba(147, 134, 86, 0.8), rgba(27, 99, 172, 0.4), rgba(147, 134, 86, 0.8)); }
+
+.contenedor--seccion--principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+  height: 40vh; }
+
+.seccion-principal .principal .titulo-principal {
+  position: relative;
+  display: flex;
+  flex: 1 1 50%;
+  align-items: flex-end;
+  justify-content: center; }
+
+.description--text {
+  display: flex;
+  flex: 1 1 50%;
+  font-weight: 300;
+  font-size: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  padding: .9rem 3rem; }
+
+.hijo3 {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex: 1 1 auto; }
+
+.bajar a {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #ffcc00;
+  text-shadow: 1px 5px 5px #333333;
+  animation: bajar-animado 2s ease-in-out infinite; }
+
+@keyframes bajar-animado {
+  from {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(6px); }
+  to {
+    transform: translateY(0); } }
+/***********FIN SECTION PRINCIPAL*************/
+/************ESTILOS SECCION DE INTRODUCCION**********/
+.seccion--introduccion {
+  background: #0066ff;
+  color: #fff; }
+
+.introduccion--contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+/***********FIN SECTION INTRODUCCION*************/
+/*********************ESTILOS SECCION SIGNIFICADO**********/
+.seccion--significado {
+  background: #fff; }
+
+.seccion--significado .contenedor--significado .imagenes--normales,
+.seccion--geografia .contenedor--geografia .imagenes--normales {
+  margin-top: 30px; }
+
+/*****************FIN ESTILOS SECCION SIGNIFICADO**********/
+/*********************ESTILOS SECCION GEOGRAFIA**********/
+.seccion--geografia {
+  height: auto;
+  background: none;
+  background-size: cover;
+  color: #fff; }
+
+.seccion--geografia .filtro--geografia {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50px;
+  height: calc(100%);
+  background-image: linear-gradient(45deg, rgba(147, 134, 86, 0.8), rgba(1, 18, 34, 0.5), rgba(147, 134, 86, 0.8)); }
+
+/*********************FIN ESTILOS SECCION GEOGRAFIA**********/
+/*********************ESTILOS SECCION UBICACION**********/
+.seccion--ubicacion .ubicacion--hexagono {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 7rem;
+  color: #0066ff; }
+
+.seccion--ubicacion .mapa--sinahua {
+  flex: 1 1 100%;
+  height: auto; }
+
+.seccion--ubicacion .mapa--sinahua iframe {
+  margin-top: 40px;
+  height: 17rem; }
+
+.seccion--ubicacion .contenedor--ubicacion--icono {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  /*indicamos que crecera en ancho y alto segun el viewport con flex al 100%*/ }
+
+.ubicacion--crece {
+  display: flex;
+  position: relative;
+  width: 200px;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center; }
+
+.ubicacion--hexagono {
+  position: relative;
+  width: 200px;
+  height: 120.34px;
+  margin: 72.17px 0;
+  background: #fff;
+  filter: drop-shadow(1px 2px 5px rgba(51, 51, 51, 0.876));
+  left: 0; }
+
+.ubicacion--hexagono:before,
+.ubicacion--hexagono:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent; }
+
+.ubicacion--hexagono:before {
+  bottom: 100%;
+  border-bottom: 65.17px solid #fff; }
+
+.ubicacion--hexagono:after {
+  top: 100%;
+  width: 0;
+  border-top: 65.17px solid #fff;
+  left: 0; }
+
+.texto--ubicacion--azul {
+  color: #0066ff;
+  font-size: .9srem;
+  flex: 1 1 auto; }
+
+/*********************FIN ESTILOS SECCION UBICACION**********/
+/*********************ESTILOS SECCION FLORA**********/
+.seccion--flora {
+  height: auto;
+  bottom: 0; }
+
+.seccion--flora .fondo--single--blog {
+  width: 100%;
+  height: inherit;
+  background: url("../images/fondos/mezquite-5.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.seccion--flora .filtro--single--blog {
+  background: rgba(0, 0, 0, 0.5); }
+
+.seccion--flora::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  z-index: -2;
+  background: #ff6633;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.seccion--flora .contenedor--flora {
+  margin: 80px auto 0 auto; }
+
+.contenedor--imagenes {
+  display: flex;
+  flex-direction: column; }
+
+.seccion--flora .contenedor--imagenes {
+  padding-bottom: 30px; }
+
+.seccion--flora .contenedor--imagenes .imagenes--flora img {
+  flex: 1 1 100%; }
+
+.contenedor--flora .contenedor--imagenes .descripcion--flora {
+  font-size: 1.5rem;
+  margin: 0 !important; }
+
+.contenedor--flora .contenedor--imagenes .linea--flora {
+  text-align: left;
+  margin-top: -20px;
+  border-bottom: 5px solid #ff6633;
+  width: 50%; }
+
+.contenedor--flora .contenedor--imagenes .descripcion--flora-2 {
+  font-size: 1.5rem;
+  margin: 0 !important;
+  color: #fff !important;
+  flex-direction: row;
+  flex: 1 1 auto; }
+
+.contenedor--flora .contenedor--imagenes .linea--flora-2 {
+  margin-top: -20px;
+  border-bottom: 5px solid #fff;
+  width: 100%;
+  flex: 1 1 auto; }
+
+/*********************FIN ESTILOS SECCION FLORA**********/
+/*********************ESTILOS SECCION FAUNA**********/
+.seccion--fauna {
+  background: linear-gradient(30deg, rgba(176, 176, 97, 0.6), rgba(245, 156, 23, 0.6), rgba(186, 174, 86, 0.6)); }
+
+.seccion--fauna .imagenes--fauna > .titulo--fauna {
+  position: relative;
+  display: inline-block;
+  padding: 0 2em 0.1em 2em;
+  color: #ff6633;
+  font-size: 1.2rem;
+  z-index: 0; }
+
+.seccion--fauna .imagenes--fauna > .titulo--fauna ::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: #fff;
+  border-radius: 0 0 .5em .5em;
+  transform: perspective(1em) rotateX(-9deg);
+  transform-origin: top;
+  filter: drop-shadow(1px 2px 5px rgba(51, 51, 51, 0.876)); }
+
+.seccion--fauna .imagenes--fauna {
+  position: relative;
+  width: 95%;
+  padding-bottom: 50px;
+  z-index: 1; }
+
+.seccion--fauna .imagenes--fauna::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 35px;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: calc(100% - 30px);
+  height: calc(100% -  7.5rem);
+  background-color: #fff;
+  box-shadow: 1px 2px 10px rgba(51, 51, 51, 0.842); }
+
+/*********************FIN ESTILOS SECCION FAUNA**********/
+/*********************ESTILOS SECCION CLIMA**********/
+.seccion--clima {
+  height: 100%;
+  background: url("../images/clima/clima2.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  height: 100vh; }
+
+.seccion--clima .titulo--blog--post h1 {
+  background-image: linear-gradient(45deg, rgba(184, 172, 130, 0.8), rgba(27, 99, 172, 0.4), rgba(240, 233, 208, 0.8));
+  height: 27vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; }
+
+.seccion--clima .filtro--clima {
+  position: relative;
+  width: 100%;
+  height: inherit;
+  background-image: linear-gradient(45deg, rgba(147, 134, 86, 0.8), rgba(27, 99, 172, 0.4), rgba(147, 134, 86, 0.8)); }
+
+.seccion--clima .contenedor--clima,
+.seccion--sociedad .contenedor--sociedad,
+.seccion--cultura, .contenedor--cultura {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end; }
+
+/*********************ESTILOS SECCION CLIMA**********/
+/*********************ESTILOS SECCION SOCIEDAD**********/
+.seccion--sociedad {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url("../images/sociedad/sociedad.jpg") no-repeat top left;
+  background-size: cover;
+  color: #fff; }
+
+.seccion--sociedad .filtro--sociedad {
+  position: relative;
+  width: 100%;
+  padding-bottom: 80px;
+  height: calc(100%);
+  background-image: linear-gradient(45deg, rgba(147, 134, 86, 0.8), rgba(1, 18, 34, 0.5), rgba(147, 134, 86, 0.8)); }
+
+.sombra--negra {
+  padding: 10px;
+  text-shadow: 2px 2px 3px rgba(3, 3, 3, 0.8); }
+
+.contenedor--sociedad .parrafo--normal, .contenedor--sociedad .parrafo--resaltado {
+  text-align: center !important; }
+
+/*********************FIN ESTILOS SECCION SOCIEDAD**********/
+/*********************ESTILOS SECCION ECONOMIA**********/
+.seccion--economia {
+  background: linear-gradient(60deg, rgba(245, 156, 23, 0.4), rgba(27, 100, 172, 0.3));
+  padding-bottom: 80px; }
+
+.seccion--economia .subtitulo--economia h6 {
+  font-size: 1.6rem;
+  padding: .5rem; }
+
+/*********************FIN ESTILOS SECCION ECONOMIA**********/
+/*********************ESTILOS SECCION CULTURA**********/
+.seccion--cultura {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../images/cultura/1-cultura.jpg") no-repeat top center;
+  background-size: cover; }
+
+.seccion--cultura .filtro--cultura {
+  position: relative;
+  width: 100%;
+  height: calc(100%);
+  background-image: linear-gradient(60deg, rgba(245, 156, 23, 0.5), rgba(36, 115, 185, 0.8), rgba(51, 51, 51, 0.85));
+  color: #fff; }
+
+.seccion--cultura .imagenes--cultura,
+.seccion--religion .imagenes--religion,
+.video--religion iframe {
+  border: 10px solid rgba(255, 255, 255, 0.5);
+  background-clip: padding-box; }
+
+/*********************FIN ESTILOS SECCION CULTURA**********/
+/*********************ESTILOS SECCION RELIGION**********/
+.seccion--religion {
+  position: relative;
+  width: 100%;
+  height: calc(100%);
+  background-image: linear-gradient(60deg, #f59c17, #2473b9, #333333);
+  color: #fff;
+  padding-bottom: 80px;
+  font-weight: 300; }
+
+.descripcion--imagenes,
+.descripcion--video {
+  font-size: 1em;
+  font-weight: 250;
+  padding: .8rem auto; }
+
+.video--religion iframe {
+  width: 100%;
+  height: 40vh; }
+
+/*********************FIN ESTILOS SECCION RELIGION**********/
+/*********************ESTILOS SECCION DANZA**********/
+.seccion--danza {
+  position: relative;
+  padding-bottom: 80px; }
+
+.seccion--danza .imagenes--danza img {
+  width: 100%;
+  object-fit: cover; }
+
+.video--danza iframe {
+  width: 100%;
+  height: 113px; }
+
+.seccion--danza .imagenes--danza > .base--imagen--danza,
+.seccion--danza .video--danza .base--video--danza {
+  position: relative;
+  top: -20px;
+  left: 0px;
+  bottom: 0;
+  right: 0;
+  background: #ffcc00;
+  width: 100%;
+  height: 40px;
+  border-radius: 50% 50% 100% 100%;
+  box-shadow: 3px 1px 10px #333333, 7px -1px 25px rgba(51, 51, 51, 0.747), 7px 10px 30px rgba(51, 51, 51, 0.5);
+  z-index: -1; }
+
+.base--video--danza {
+  top: -30px !important; }
+
+/*****************FIN ESTILOS SECCION DANZA**********/
+/*********************ESTILOS SECCION GASTRONOMIA**********/
+.seccion--gastronomia {
+  padding-bottom: 80px;
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.979), rgba(27, 100, 172, 0.4), rgba(238, 123, 36, 0.4)); }
+
+.titulo--sec--gastro {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0066ff; }
+
+.seccion--gastronomia .item--gastronomia .imagenes--gastronomia img {
+  border: 10px solid rgba(255, 255, 255, 0.582);
+  background-clip: padding-box;
+  margin-bottom: 30px;
+  object-fit: cover;
+  width: 100%; }
+
+.seccion--gastronomia .item--gastronomia .imagenes--gastronomia figcaption {
+  padding-bottom: 20px;
+  font-weight: 300; }
+
+/*********************FIN ESTILOS SECCION GASTRONOMIA**********/
+/*********************ESTILOS SECCION BLOG**********/
+.seccion--blog {
+  padding-bottom: 80px; }
+
+.item--blog {
+  margin-bottom: 30px; }
+
+.item--blog .imagen--blog img {
+  object-fit: cover;
+  width: 100%;
+  height: 170px; }
+
+.item--blog .cuerpo-blog {
+  padding: 10px; }
+
+.item--blog .descripcion--blog,
+.item--blog .fecha--post h6 {
+  font-weight: 300; }
+
+.item--blog .categoria--blog {
+  background: #0066ff;
+  color: #fff;
+  padding: .5rem 15px 1px 15px; }
+
+.item--blog .fecha--post {
+  color: #0066ff; }
+
+.item--blog .titulo--post h4 {
+  font-weight: bold;
+  font-family: "nunito"; }
+
+.item--blog a {
+  font-family: "nunito";
+  display: block;
+  width: 100%;
+  background-color: #333333;
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.3em;
+  text-decoration: none;
+  border: 1px solid #333333; }
+
+.item--blog a:hover {
+  background-color: #fff;
+  color: #0066ff;
+  text-decoration: none;
+  border: 1px solid #0066ff;
+  transition: all ease-in .3s; }
+
+.item--blog:hover {
+  transition: all ease-in .3s;
+  box-shadow: 1px 2px 10px rgba(51, 51, 51, 0.842); }
+
+/*********************FIN ESTILOS SECCION BLOG**********/
+/*********************ESTILOS SECCION SINGLE POST BLOG**********/
+.seccion--blog--post {
+  height: 100%; }
+
+.filtro--single--blog {
+  width: 100%;
+  height: 25rem;
+  top: 0;
+  left: 0;
+  background: rgba(51, 102, 153, 0.5);
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.fondo--single--blog {
+  background: url("../images/fondos/fondo-ubicacion.jpg") no-repeat bottom center;
+  background-size: cover;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 25rem; }
+
+.titulo--blog--post h1 {
+  font-weight: 400; }
+
+/* boton buscar*/
+.boton-buscar {
+  margin-left: auto;
+  margin-right: .5rem; }
+
+.boton-buscar {
+  border: 0;
+  font-size: 1.1rem;
+  padding: .5rem;
+  background: transparent;
+  color: #0066ff; }
+
+.boton-buscar:focus, .boton-menu:focus {
+  outline: 0; }
+
+/*bloque buscar*/
+.contenedor-bloque-buscar {
+  background: transparent;
+  display: flex;
+  height: 2rem;
+  margin: 1rem 0; }
+
+#bloque-buscar {
+  flex: 1 1 20% !important; }
+
+.contenedor-bloque-buscar input[type="text"] {
+  flex: 1 1 auto;
+  border-radius: 5px 0 0 5px;
+  padding: 0 1rem;
+  color: #ff6633;
+  border: 1px solid #3399FF; }
+
+.contenedor-bloque-buscar input[type="text"]::placeholder {
+  color: #ff6633; }
+
+.contenedor-bloque-buscar button[type="submit"] {
+  border: 0;
+  border-radius: 0  5px 5px 0;
+  padding: .1rem .9rem;
+  background: #3399FF;
+  color: #fff; }
+
+.titular--single--post {
+  order: 1; }
+
+.c2 {
+  order: 3; }
+
+.tags--blog--post {
+  order: 4; }
+
+.c3 {
+  order: 2; }
+
+.seccion--blog--post .categoria--blog--post p {
+  padding: .8rem 0 0 0;
+  margin-bottom: 0; }
+
+.seccion--blog--post .contenedor--single--post {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.seccion--blog--post .imagen--blog--post img {
+  background: #333333; }
+
+.seccion--blog--post .categoria--blog--post,
+.seccion--blog--post .datos--blog--post .autor--blog-post,
+.seccion--blog--post .datos--blog--post .fecha--blog-post {
+  color: #0066ff; }
+
+.datos--blog--post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.seccion--blog--post .subtitulo--blog--post {
+  font-size: 25px;
+  border-top: 1px solid #ff6633;
+  border-bottom: 1px solid #ff6633;
+  padding-top: 1rem;
+  margin-bottom: 3rem; }
+
+.categorias--blog--post ul li {
+  list-style: square inside url("../images/blog/listas.jpg");
+  font-weight: bold; }
+
+.categorias--blog--post ul li a {
+  text-decoration: none; }
+
+.compartir--blog--post {
+  border-bottom: 1px solid #ff6633;
+  padding-bottom: .6rem; }
+
+.botones--compartir--blog--post i {
+  position: relative;
+  background-color: #0066ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 1.3rem;
+  color: #fff;
+  border: 1px solid #3399FF;
+  padding: 10px 15px 1px 12px; }
+
+.botones--compartir--blog--post i:hover {
+  transition: all ease-in-out .3s;
+  background-color: #3399FF;
+  color: #fff; }
+
+.comentarios--blog--post .titulo--comentarios--blog--post h5,
+.seccion--blog--post .titulo--categorias--blog--post h5 {
+  font-family: nunito;
+  font-weight: bold; }
+
+.seccion--blog--post .contenedor--comentarios--blog--post {
+  padding: .7rem;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px #333333;
+  margin-bottom: .5rem; }
+
+.seccion--blog--post .foto--usuario--comentario img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #333333; }
+
+.seccion--blog--post .fecha--comentario p {
+  margin-bottom: 0 !important;
+  font-size: .8rem; }
+
+.seccion--blog--post .categorias--blog--post
+.titulo--categorias--blog--post h5,
+.novedades--blog--post h5,
+.titulo--tags--blog--post h5,
+.tags--blog--pos .titulo--tags--blog--post h5,
+.seccion--blog--post .comentarios--blog--post h5 {
+  font-family: "nunito";
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 10px; }
+
+.seccion--blog--post .titulo--categorias--blog--post h5,
+.seccion--blog--post .novedades--blog--post .titulo--novedades--blog--post h5,
+.seccion--blog--post .titulo--tags--blog--post h5,
+.seccion--blog--post .comentarios--blog--post h5 {
+  border-bottom: 1px solid #ff6633; }
+
+.seccion--blog--post a {
+  text-decoration: none; }
+
+.novedades--posts {
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.novedades--posts {
+  flex-direction: row;
+  color: #333333;
+  justify-content: space-between; }
+
+.novedades--post .cuerpo--novedades h6 {
+  font-size: .9rem; }
+
+.novedades--posts .fecha {
+  margin-bottom: 0 !important; }
+
+.novedades--posts:hover {
+  text-decoration: none;
+  box-shadow: 1px 1px 7px rgba(51, 51, 51, 0.616);
+  border-radius: 9px;
+  transition: all ease-in .3s;
+  color: #3399FF; }
+
+.novedades--posts .enlace-font {
+  padding: 5px; }
+
+.novedades--posts .enlace-font i {
+  font-weight: bolder;
+  padding: 30px 0 30px 0;
+  font-size: 2rem; }
+
+.imagenes--novedades img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden; }
+
+.tags--individual {
+  background: #3399FF;
+  color: #fff;
+  margin: 7px;
+  padding: 0.5rem 0.5rem 0 0.5rem; }
+
+/*********************FIN ESTILOS SECCION SINGLE POST BLOG**********/
+/*********************ESTILOS SECCION GALERIA**********/
+.titulo--nivel1 {
+  flex: 1 1 100%; }
+
+.seccion--galeria img {
+  width: 100%; }
+
+.seccion--galeria .imagenes--galeria--contenedor
+.col-md-3 {
+  padding: 0; }
+
+.imagen--focus {
+  z-index: 1;
+  width: 92%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, rgba(147, 134, 86, 0.8), rgba(27, 99, 172, 0.4), rgba(147, 134, 86, 0.8));
+  opacity: 0;
+  filter: Alpha(Opacity=0);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+  bottom: -100%;
+  margin: 0;
+  padding: 0; }
+
+.galery--item:hover .imagen--focus {
+  opacity: 1;
+  filter: Alpha(Opacity=100);
+  width: 100%;
+  display: block;
+  left: 0;
+  bottom: 0; }
+
+/*********************FIN ESTILOS SECCION GALERIA**********/
+/*********************ESTILOS SECCION CONTACTO**********/
+.seccion--contacto {
+  position: relative;
+  background: url("../images/fondos/fondo-contacto.jpg") no-repeat;
+  background-position: center right;
+  background-size: cover;
+  height: 90vh; }
+
+.seccion--contacto .contacto--cuerpo {
+  width: 100%;
+  height: 90vh;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff; }
+
+.seccion--contacto .contenedor--contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: inherit; }
+
+.seccion--contacto .contacto--opinion {
+  padding: .5em 30px .2rem  30px;
+  font-weight: 100; }
+
+.seccion--contacto .titulo--contacto h3 {
+  padding: 0 30px .2rem 30px;
+  font-family: 'nunito';
+  font-weight: bold;
+  font-size: 1rem; }
+
+.footer--descripcion {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center; }
+
+.seccion--contacto .footer--descripcion p {
+  font-weight: 100;
+  color: #ffcc00;
+  font-size: 0.8rem; }
+
+.seccion--contacto .nav-link {
+  padding: .1rem .2rem; }
+
+.seccion--contacto i {
+  border: 1px solid #fff;
+  padding: .5rem;
+  border-radius: 100%; }
+
+.subscriptor, .redes-sociales, .contacto--opinion {
+  padding-top: .7rem; }
+
+.subscriptor {
+  flex: 1 1 50%; }
+
+@media (max-width: 695px) {
+  .subscriptor {
+    flex-direction: column !important; } }
+.redes-sociales {
+  flex: 1 1 auto; }
+
+.btn-email {
+  border-radius: 5px  0  0 5px; }
+
+.btn-subs {
+  border-radius: 0 5px 5px 0; }
+
+.subscriptor .alert {
+  padding: .2rem .5rem;
+  margin-bottom: .2rem;
+  text-align: center; }
+
+/*********************FIN ESTILOS SECCION CONTACTO**********/
+/*********************ESTILOS BOTON IR ARRIBA**********/
+.ir-arriba {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: rgba(51, 153, 255, 0.692);
+  text-decoration: none;
+  z-index: 99999;
+  padding: .1rem .9rem;
+  display: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.ir-arriba:hover,
+.ir-arriba:focus {
+  outline: 0;
+  text-decoration: none;
+  color: #fff; }
+
+/*********************FIN ESTILOS BOTON IR ARRIBA**********/
+/*****************MEDIAS QUERIES**********************************
+*****************************************************************/
+@media (min-width: 700px) {
+  #menu-principal {
+    order: 1;
+    flex: 0 1 auto;
+    display: block;
+    height: auto !important;
+    width: 100%;
+    text-align: center; }
+
+  /*apartir del pixel 700 en adlenate se toa estas reglas*/
+  #menu-principal ul {
+    display: flex;
+    margin: 0 0 0 0;
+    justify-content: flex-end; }
+
+  #menu-principal ul a:hover {
+    transition: all  .5s; }
+
+  #menu-principal ul li ul li {
+    background: #ffffff;
+    transition: all ease-in-out .5s; }
+
+  /*para dar el efecto ocupamos el pseudo seletor ::after*/
+  #menu-principal li a::after {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #3399FF;
+    transition: all .5s; }
+
+  /*el ancho es importante para que se vea el efecto*/
+  #menu-principal li.active a:after,
+  #menu-principal li a:hover:after,
+  #menu-principal li a:focus:after {
+    width: 100%; }
+
+  #menu-principal ul a {
+    color: #333333;
+    font-size: 1.1em;
+    font-family: 'Nunito', sans-serif;
+    border-bottom: 3px solid transparent; }
+
+  #menu-principal ul ul {
+    position: absolute; }
+
+  #menu-principal ul a:hover, #menu-principal ul li.active a {
+    color: #3399FF; }
+
+  #menu-principal ul li a .iconos-derecha {
+    font-size: .7rem; }
+
+  .boton-buscar, .boton-menu {
+    order: 2; }
+
+  .boton-menu {
+    display: none; }
+
+  #bloque-buscar {
+    flex: 1 1 100%;
+    order: 3;
+    width: 100%;
+    right: 2rem;
+    top: 3rem;
+    transition: all ease .5s; }
+
+  .espacio--pi {
+    margin-top: 97px; }
+
+  .titulo--nivel1 {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 20px 0;
+    border-bottom: 5px solid #ff6633;
+    margin-bottom: 2rem; }
+
+  .titulo--nivel2 {
+    border-bottom: 5px solid #333333; }
+
+  .parrafo--normal {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 1.2em;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-weight: 200;
+    line-height: normal; }
+
+  .parrafo--resaltado {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: normal; }
+
+  .encabezado .logo img {
+    max-width: 250px;
+    width: 100%; }
+
+  .encabezado .container {
+    position: relative; }
+
+  .principal {
+    background-position: center center; }
+
+  .seccion-principal .principal .titulo-principal h1 {
+    font-size: 5em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: CambiarColor 2s ease-in-out infinite; }
+
+  @keyframes CambiarColor {
+    from {
+      background-color: #ffffff;
+      transform: translateY(0); }
+    55% {
+      background-color: #0066ff;
+      transform: translateY(8px); }
+    80% {
+      background-color: #ffcc00; }
+    to {
+      background-color: #fff;
+      transform: translateY(0); } }
+  .description--text {
+    display: flex;
+    flex: 1 1 50%;
+    font-size: 1.5em;
+    align-items: center;
+    justify-content: center; }
+
+  .parrafo--normal {
+    font-size: 1.3em; }
+
+  .seccion--geografia {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url("../images/geografia/cerro-sinahua.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff; }
+
+  .seccion--ubicacion .contenedor--ubicacion {
+    margin-top: 80px; }
+
+  .imagen1 {
+    margin-top: 40px !important; }
+
+  .seccion--cultura {
+    background: url("../images/cultura/1-cultura.jpg") no-repeat center center;
+    background-size: cover; }
+
+  .seccion--cultura,
+  .seccion--cultura .filtro--cultura,
+  .seccion--sociedad,
+  .seccion--sociedad .filtro--sociedad {
+    height: 100vh; }
+
+  .parrafo--resaltado--sociedad {
+    font-size: 1.1em;
+    padding: .4em 0; }
+
+  .contenedor--sociedad .parrafo--normal {
+    text-align: center !important;
+    font-size: 1em;
+    padding: .4em 0; }
+
+  .seccion--economia .contenedor--economia,
+  .seccion--danza .contenedor--danza,
+  .seccion--gastronomia .contenedor--gastronomia,
+  .seccion--blog .contenedor--blog,
+  .seccion--galeria .imagenes--galeria--contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start; }
+
+  .filtro--single--blog,
+  .fondo--single--blog {
+    height: 27rem; }
+
+  .filtro--single--blog {
+    padding-top: 30px; }
+
+  .seccion--galeria .galery--item {
+    position: relative; }
+
+  .seccion--gastronomia .item--gastronomia .titulo--sec--gastro {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: .3em auto; }
+
+  .seccion--galeria img {
+    width: 100%; }
+
+  .galery--item:hover .imagen--focus {
+    opacity: 1;
+    filter: Alpha(Opacity=100);
+    width: 100%;
+    display: block;
+    top: 0; }
+
+  .seccion--galeria .imagenes--galeria--contenedor
+  .col-md-3 {
+    padding: 0; }
+
+  .seccion--contacto,
+  .seccion--contacto .contacto--cuerpo {
+    height: 93vh; }
+
+  .seccion--contacto .titulo--contacto h3 {
+    padding: 0 30px .2rem 30px;
+    font-family: 'nunito';
+    font-weight: bold;
+    font-size: 2rem; }
+
+  .footer--descripcion {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-align: center; }
+
+  .seccion--contacto .footer--descripcion p {
+    font-weight: 100;
+    color: #ffcc00;
+    font-size: 1em; }
+
+  .contenedor--single--post {
+    position: relative;
+    align-items: flex-start;
+    justify-content: flex-start; }
+
+  .titular--single--post {
+    order: 1; }
+
+  .c2 {
+    order: 2; }
+
+  .tags--blog--post {
+    order: 4; }
+
+  .c3 {
+    order: 3; }
+
+  /********************************/
+  /********************************/
+  .footer--internas {
+    position: relative; } }
+/********FIN MIN WIDTH 700PX************/
+/********MIN WIDTH 768PX************/
+@media (min-width: 768px) {
+  .seccion--flora .contenedor--flora {
+    display: flex; }
+
+  .seccion--flora .contenedor--flora .img-1 {
+    order: 1; }
+
+  .seccion--flora .contenedor--flora .img-2 {
+    order: 8; }
+
+  .seccion--flora .contenedor--flora .img-3 {
+    order: 2; }
+
+  .seccion--flora .contenedor--flora .img-4 {
+    order: 5; }
+
+  .seccion--flora .contenedor--flora .img-5 {
+    order: 3; }
+
+  .seccion--flora .contenedor--flora .img-6 {
+    order: 6; }
+
+  .seccion--flora .contenedor--flora .img-7 {
+    order: 4; }
+
+  .seccion--flora .contenedor--flora .img-8 {
+    order: 7; }
+
+  .contenedor--flora .contenedor--imagenes .linea--flora,
+  .contenedor--flora .contenedor--imagenes .linea--flora-2 {
+    position: absolute;
+    text-align: right;
+    margin-top: -20px;
+    width: 50%;
+    border-bottom: 5px solid rgba(255, 170, 142, 0.75);
+    right: 14px; }
+
+  .contenedor--flora .contenedor--imagenes .descripcion--flora-2,
+  .contenedor--flora .contenedor--imagenes .descripcion--flora {
+    font-size: 1em;
+    text-align: right; }
+
+  .seccion--flora .contenedor--flora .img-1 .descripcion--flora,
+  .seccion--flora .contenedor--flora .img-6 .descripcion--flora-2,
+  .seccion--flora .contenedor--flora .img-7 .descripcion--flora {
+    color: #333333 !important; }
+
+  .seccion--flora .contenedor--flora .img-2 .descripcion--flora-2,
+  .seccion--flora .contenedor--flora .img-3 .descripcion--flora,
+  .seccion--flora .contenedor--flora .img-4 .descripcion--flora-2,
+  .seccion--flora .contenedor--flora .img-5 .descripcion--flora,
+  .seccion--flora .contenedor--flora .img-8 .descripcion--flora-2 {
+    color: #fff !important; }
+
+  .seccion--fauna .imagenes--fauna > .titulo--fauna {
+    position: relative;
+    display: inline-block;
+    padding: 0 2em;
+    color: #ff6633;
+    font-size: 1em;
+    z-index: 0; }
+
+  .seccion--fauna .imagenes--fauna::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: calc(100% - 30px);
+    height: calc(100% - 6rem); }
+
+  .width-2 {
+    width: 46.33%; }
+
+  .width-3 {
+    width: 28.33%; }
+
+  .width-4 {
+    width: 23.33%; }
+
+  .video--religion iframe {
+    width: 100%;
+    height: 10rem; }
+
+  .seccion--gastronomia .item--gastronomia .imagenes--gastronomia img {
+    object-fit: cover;
+    width: 100%;
+    height: calc(12rem); } }
+.subscriptor, .redes-sociales, .contacto--opinion {
+  padding-top: 1rem; }
+
+/*******************FIN ESTILOS MEDIA A 768 PX MIN WIDTH*********************/
+/*******************ESTILOS MEDIAQUERIES VARIOS*********************/
+@media (min-width: 200px) and (max-width: 350px) {
+  .encabezado .logo img {
+    max-width: 150px !important;
+    width: 100%; } }
+@media (min-width: 400px) and (max-width: 1200px) {
+  .seccion-principal .principal .titulo-principal h1 {
+    font-size: 4em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: CambiarColor 2s ease-in-out infinite; }
+
+  @keyframes CambiarColor {
+    from {
+      background-color: #ffffff;
+      transform: translateY(0); }
+    55% {
+      background-color: #0066ff;
+      transform: translateY(8px); }
+    80% {
+      background-color: #ffcc00; }
+    to {
+      background-color: #fff;
+      transform: translateY(0); } } }
+@media (max-width: 700px) {
+  #bloque-logo {
+    flex: 0 0 auto !important;
+    margin: 0 auto !important; } }
+/**ESTILOS AL NAV BAR**/
+@media (min-width: 700px) and (max-width: 1200px) {
+  #bloque-logo {
+    flex: 0 0 auto !important;
+    margin: 0 auto !important; }
+
+  .encabezado .logo img {
+    max-width: 250px;
+    width: 100%; }
+
+  #menu-principal ul {
+    justify-content: space-around !important; }
+
+  #menu-principal ul a {
+    all: unset;
+    font-size: 1em;
+    border-bottom: 3px solid transparent; } }
+@media (min-width: 700px) and (max-width: 767px) {
+  #menu-principal ul a {
+    all: unset;
+    border-bottom: 3px solid transparent;
+    font-size: .79em;
+    padding: .1em; } }
+@media (min-width: 991px) {
+  .video--danza iframe {
+    width: 100%;
+    height: 150px; }
+
+  .espacio--pi {
+    margin-top: 113px; } }
+@media (min-width: 1200px) {
+  .video--danza iframe {
+    width: 100%;
+    height: 181px; }
+
+  .espacio--pi {
+    margin-top: 65px; } }
+@media (max-width: 700px) {
+  .video--danza iframe {
+    width: 100%; } }
+@media (max-width: 970px) {
+  .video--danza iframe {
+    width: 100%;
+    height: 105px; } }
+@media (max-width: 769px) {
+  .video--danza iframe {
+    width: 100%; } }
+@media (max-width: 767px) {
+  .video--danza iframe {
+    width: 100%;
+    height: 15rem; } }
+/*******************FIN ESTILOS MEDIAQUERIES VARIOS*********************/
+.scrolled {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-top: -130px;
+  background: white !important; }
+
+.awake {
+  margin-top: 0px;
+  transition: .3s all ease-out; }
+
+.sleep {
+  transition: .3s all ease-out; }
+
+.ftco-navbar.scrolled .nav-link.active {
+  color: #ffcc00 !important; }
+
+.ftco-navbar-light {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background: #fff; }
+  @media screen and (max-width: 991px) {
+    .ftco-navbar-light {
+      top: 0;
+      position: relative; } }
+
+.ftco_navbar.navbar.navbar-expand-lg.ftco-navbar-light.scrolled {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin-top: -130px;
+  background: #fff !important; }
+
+.ftco_navbar.navbar.navbar-expand-lg.ftco-navbar-light.scrolled.awake {
+  margin-top: 0px;
+  transition: .3s all ease-out; }
+
+/*# sourceMappingURL=estilos-freelancer.css.map */
