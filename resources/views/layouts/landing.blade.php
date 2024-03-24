@@ -12,7 +12,7 @@
     <meta name="author" content="Diego Arista">
     <meta name="keywords" content="Sinahua, Pueblo Hospitalario, Pueblos del estado de Guerrero, Guereero, Tierra Caleinte, Guache, Kuinique, Comida típica de Tierra Caliente">
     <meta name="description" content="Sinahua Sitio Oficial, Pueblo hospitalario del Estado de Guerrero, conoce nuestras tradiciones y nuestra cultura.">
-    <title>Sinahua | Pueblo Hospitalario  | Sitio Oficial</title>
+    <title>Diego Arista | Web Designer</title>
 
     <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/x-icon">
 
